@@ -1,7 +1,8 @@
+<main class="container">
 <div class="row">
-    <div class="offset-md-3 col-md-6 col-sm-12">
+    <div id = "mainDiv" class="p-5 mb-4  bg-light rounded-3">
           <div class="login" id="contentArea">
-              <h1 class="display-4">Register</h1>
+              <h1 class="display-4 fw-bold">Register</h1>
 
               <% if(messages.length > 0) { %>
                 <div id="messageArea" class="alert alert-danger">
@@ -13,7 +14,7 @@
                 <p class="hint-text">Create your own account. It's free and only takes a minute.</p>
                 <div class="form-group">
                   <div class="row">
-                    <p class="lead"><i class="fas fa-user-shield"></i> Personal Information</p>
+                    <p class="leadHeader"><i class="fas fa-user-check"></i> Personal Information</p>
                     <div class="col-md-6">
                       <input class="form-control" type="text" name="FirstName" id="firstName" placeholder="First Name" required>
                     </div>
@@ -33,7 +34,7 @@
 
                 <div class="form-group mt-4">
                   <div class="row">
-                    <p class="lead"><i class="fas fa-database"></i>System Identification</p>
+                    <p class="leadHeader"><i class="fas fa-server"></i> System Identification</p>
                     <div class="col-md-12">
                       <input type="text" class="form-control" id="username" name="username"  required
                       value="" placeholder="Username">
@@ -58,16 +59,17 @@
                 </div>
                  
                                                     
-                <div class="text-end mt-2">
+                <div class="text-center mt-3">
                   <button id="submitButton" type="submit" class="btn btn-primary">Register</button>
                   <button id="cancelButton" type="reset" class="btn btn-warning"><i class="fas fa-undo fa-lg"></i> Cancel</button>
                 </div>
               </form>
              
           </div>
-          <p class="text-center text-muted small">
+          <p class="text-center text-muted medium">
             Already have an account? 
             <a href="/login">Sign in</a>
           </p>
     </div>
 </div>
+</main>

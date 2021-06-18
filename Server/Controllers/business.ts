@@ -12,7 +12,7 @@ import { UserDisplayName } from '../Util';
 export function DisplayBusinessListPage(req: Request, res: Response, next: NextFunction): void
 {
     //mongo db - find method to return all the business collection
-    Business.find(function(err,businessCollection){
+    Business.find(function(err,businessCollection) {
         if(err)
         {
             return console.error(err);
@@ -23,7 +23,7 @@ export function DisplayBusinessListPage(req: Request, res: Response, next: NextF
 
         //render the business-list content partial page
         res.render('index', {title: 'Business Contact List', page: 'business-list', business: businessCollection, displayName: UserDisplayName(req)})
-    });
+    }).sort({"name" : 1}).collation( { locale: "en_US", numericOrdering: true }); //alphabetically order by name
 }
 
 //Display Edit page

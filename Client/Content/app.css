@@ -80,6 +80,8 @@
 .mb-3{
     text-align: center;
 }
+
+/*login & register*/
 .input-group-addon:first-child
 {
     border-right: 0;
@@ -88,7 +90,7 @@
 .input-group-addon
 {
     padding: 6px 12px;
-    font-size: 14px;
+    font-size: 25px;
     font-weight: 400;
     line-height: 1;
     text-align: center;
@@ -98,7 +100,7 @@
 
 .input-group-addon .fa
 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .input-group .form-control
@@ -115,13 +117,10 @@
     border-bottom-left-radius: 0;
 }
 
-
-
 .login
 {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
-    background-color: lightgrey;
     border-radius: .3rem;
 }
 
@@ -138,4 +137,46 @@
     position: relative;
     top: -31px;
     display: none;
+}
+
+#loginForm
+{
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin .form-control 
+{
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus 
+{
+    z-index: 2;
+}
+
+#registerForm
+{
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.leadHeader
+{
+      font-size: x-large;
+}
+
+/*bottom nav*/
+h6
+{
+    color: rgba(255, 255, 255, 0.829);
+    font-weight: lighter;
 }

@@ -12,7 +12,7 @@ function DisplayBusinessListPage(req, res, next) {
             return console.error(err);
         }
         res.render('index', { title: 'Business Contact List', page: 'business-list', business: businessCollection, displayName: Util_1.UserDisplayName(req) });
-    });
+    }).sort({ "name": 1 }).collation({ locale: "en_US", numericOrdering: true });
 }
 exports.DisplayBusinessListPage = DisplayBusinessListPage;
 function DisplayEditPage(req, res, next) {
