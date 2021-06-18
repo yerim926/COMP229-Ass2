@@ -5,6 +5,14 @@ import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import mongoose, { mongo } from 'mongoose';
 
+// modules for authentication
+import session from 'express-session';
+import passport from 'passport';
+import passportLocal from 'passport-local';
+
+// authentication objects
+let localStrategy = passportLocal.Strategy; //alias
+
 // attach router files
 import indexRouter from '../Routes/index';
 import businessRouter from '../Routes/business';
