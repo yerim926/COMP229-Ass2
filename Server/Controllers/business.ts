@@ -5,6 +5,9 @@ import Business from "../Models/business";
 
 // Display Functions
 
+//import Util Functions
+import { UserDisplayName } from '../Util';
+
 //read in CRUD
 export function DisplayBusinessListPage(req: Request, res: Response, next: NextFunction): void
 {
@@ -19,7 +22,7 @@ export function DisplayBusinessListPage(req: Request, res: Response, next: NextF
         // console.log(business);
 
         //render the business-list content partial page
-        res.render('index', {title: 'Business Contact List', page: 'business-list', business: businessCollection})
+        res.render('index', {title: 'Business Contact List', page: 'business-list', business: businessCollection, displayName: UserDisplayName(req)})
     });
 }
 
@@ -41,7 +44,7 @@ export function DisplayEditPage(req: Request, res: Response, next: NextFunction)
             res.end(err);
         }
         //show the edit view
-        res.render('index',{title: 'Edit', page: 'update', business: businessContactToEdit})
+        res.render('index',{title: 'Edit', page: 'update', business: businessContactToEdit, displayName: UserDisplayName(req)})
     });
 }
 
@@ -50,7 +53,7 @@ export function DisplayEditPage(req: Request, res: Response, next: NextFunction)
 export function DisplayAddPage(req: Request, res: Response, next: NextFunction): void
 {
     // show the edit view
-    res.render('index', { title: 'Add', page: 'update', business: '' });
+    res.render('index', { title: 'Add', page: 'update', business: '', displayName: UserDisplayName(req) });
 }
 
 // Process Functions

@@ -33,9 +33,9 @@ declare global
     export type UserDocument = mongoose.Document &
     {
         _id: String,
-        name: String,
-        phone: String,
-        email: String
+        username: String,
+        emailAddress: String,
+        displayName: String
     }
 }
 export default Model;
