@@ -26,16 +26,16 @@ const UserSchema = new Schema
 
 UserSchema.plugin(passportLocalMongoose);
 
-const Model = mongoose.model("Business",UserSchema as PassportLocalSchema);
+const Model = mongoose.model("Contact",UserSchema as PassportLocalSchema);
 
 declare global
 {
     export type UserDocument = mongoose.Document &
     {
         _id: String,
-        username: String,
-        emailAddress: String,
-        displayName: String
+        name: String,
+        phone: String,
+        email: String
     }
 }
 export default Model;

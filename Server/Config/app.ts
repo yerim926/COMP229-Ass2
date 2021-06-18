@@ -75,7 +75,7 @@ app.use(passport.session());
 passport.use(User.createStrategy());
 
 //serialize and desiarlize user date
-//passport-local
+//passport-local strategy
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
