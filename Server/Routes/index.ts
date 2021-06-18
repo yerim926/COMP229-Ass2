@@ -23,4 +23,8 @@ router.get('/services', DisplayServicesPage);
 /* GET contact page. */
 router.get('/contact', DisplayContactPage);
 
+// Add Login Display and Process
+// Add Register Display and Process
+// Process Logout
+
 //module.exports = router;
