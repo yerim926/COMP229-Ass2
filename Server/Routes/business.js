@@ -7,10 +7,11 @@ const express_1 = __importDefault(require("express"));
 const router = express_1.default.Router();
 exports.default = router;
 const business_1 = require("../Controllers/business");
+const index_1 = require("../Util/index");
 router.get('/', business_1.DisplayBusinessListPage);
-router.get('/add', business_1.DisplayAddPage);
-router.get('/edit/:id', business_1.DisplayEditPage);
-router.post('/add', business_1.ProcessAddPage);
-router.post('/edit/:id', business_1.ProcessEditPage);
-router.get('/delete/:id', business_1.ProcessDeletePage);
+router.get('/add', index_1.AuthGuard, business_1.DisplayAddPage);
+router.get('/edit/:id', index_1.AuthGuard, business_1.DisplayEditPage);
+router.post('/add', index_1.AuthGuard, business_1.ProcessAddPage);
+router.post('/edit/:id', index_1.AuthGuard, business_1.ProcessEditPage);
+router.get('/delete/:id', index_1.AuthGuard, business_1.ProcessDeletePage);
 //# sourceMappingURL=business.js.map
