@@ -1,22 +1,20 @@
-//connect to Mongo DB
-
 import mongoose, { PassportLocalSchema } from 'mongoose';
-const Schema = mongoose.Schema; //alias for Schema
+const Schema = mongoose.Schema; // Schema alias
 import passportLocalMongoose from 'passport-local-mongoose';
 
 const UserSchema = new Schema
 ({
-    username:String,
+    username: String,
     emailAddress: String,
     displayName: String,
-    created: 
+    created:
     {
-        type:Date,
+        type: Date,
         default: Date.now()
     },
-    updated: 
+    updated:
     {
-        type:Date,
+        type: Date,
         default: Date.now()
     }
 },
@@ -26,7 +24,7 @@ const UserSchema = new Schema
 
 UserSchema.plugin(passportLocalMongoose);
 
-const Model = mongoose.model("Contact",UserSchema as PassportLocalSchema);
+const Model = mongoose.model("Contact", UserSchema as PassportLocalSchema);
 
 declare global
 {

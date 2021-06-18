@@ -39,7 +39,7 @@ export function DisplayLoginPage(req: Request, res: Response, next: NextFunction
 {
     if(!req.user)
     {
-        return res.render('index', { title: 'Login', page: 'login', messages: req.flash('loginMessage')  });
+        return res.render('index', { title: 'Login', page: 'login', messages: req.flash('loginMessage'), displayName: UserDisplayName(req)  });
     }
     return res.redirect('/business-list');
 }

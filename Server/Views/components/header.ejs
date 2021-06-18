@@ -58,14 +58,15 @@
           </li>
 
           <!--Check if users are logged in-->
+           <% if(displayName) { %>
           <li class="nav-item">
-          <a class="nav-link" href="/logout"><i class="fas fa-sign-out-alt fa-lg"></i> Logout</a>
+            <a class="nav-link" href="/logout"><i class="fas fa-sign-out-alt fa-lg"></i> Logout</a>
           </li>
-
+          <% } else { %>
           <li class="nav-item">
-          <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt fa-lg"></i> Login</a>
+            <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt fa-lg"></i> Login</a>
           </li>
-
+          <% } %>
         </ul>
       </div>
     </div>

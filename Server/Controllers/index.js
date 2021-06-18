@@ -29,7 +29,7 @@ function DisplayContactPage(req, res, next) {
 exports.DisplayContactPage = DisplayContactPage;
 function DisplayLoginPage(req, res, next) {
     if (!req.user) {
-        return res.render('index', { title: 'Login', page: 'login', messages: req.flash('loginMessage') });
+        return res.render('index', { title: 'Login', page: 'login', messages: req.flash('loginMessage'), displayName: Util_1.UserDisplayName(req) });
     }
     return res.redirect('/business-list');
 }
