@@ -1,3 +1,8 @@
+// File Name : app.ts
+// Student's Name : Yerim Cho
+// Student ID : 301143325
+// Date : June 18th, 2021
+
 import createError from 'http-errors';
 import express from 'express';
 import path from 'path';

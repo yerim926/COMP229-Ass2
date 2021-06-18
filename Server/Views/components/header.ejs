@@ -1,3 +1,8 @@
+<!--  File Name : header.ejs
+      Student's Name : Yerim Cho
+      Student ID : 301143325
+      Date : June 18th, 2021-->
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <img src="/Assets/images/logo_white.png">
@@ -8,6 +13,8 @@
       <!--Nav bar with active identifying active page-->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <!--Home-->
           <li class="nav-item">
           <% if (title == "Home"){ %>
             <a class="nav-link active" href="/home"><i class="fas fa-lg fa-laptop-house"></i> Home</a>
@@ -16,6 +23,7 @@
             <% } %>
           </li>
 
+          <!--AboutMe-->
           <li class="nav-item">
           <% if (title== "About Me"){ %>
             <a class="nav-link active" href="/about"><i class="fas fa-user"></i> About</a>
@@ -24,6 +32,7 @@
             <% } %>
           </li>
 
+          <!--Projects-->
           <li class="nav-item">
           <% if (title== "Projects"){ %>
             <a class="nav-link active" href="/projects"><i class="fas fa-laptop-code"></i> Projects</a>
@@ -32,6 +41,7 @@
             <% } %>
           </li>
 
+          <!--Services-->
           <li class="nav-item">
           <% if (title== "Services"){ %>
             <a class="nav-link active" href="/services"><i class="fas fa-file-invoice-dollar"></i> Services</a>
@@ -40,6 +50,7 @@
             <% } %>
           </li>
 
+          <!--Contact-->
           <li class="nav-item">
           <% if (title== "Contact"){ %>
             <a class="nav-link active" href="/contact"><i class="fas fa-mobile-alt"></i> Contact</a>

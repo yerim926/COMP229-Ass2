@@ -1,3 +1,8 @@
+// File Name : contact.ts
+// Student's Name : Yerim Cho
+// Student ID : 301143325
+// Date : June 18th, 2021
+
 import mongoose from 'mongoose';
 const Schema = mongoose.Schema; // Schema alias
 

@@ -1,3 +1,8 @@
+// File Name : index.ts
+// Student's Name : Yerim Cho
+// Student ID : 301143325
+// Date : June 18th, 2021
+
 import express from 'express';
 const router = express.Router();
 export default router;

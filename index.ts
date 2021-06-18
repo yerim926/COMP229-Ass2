@@ -1,5 +1,12 @@
 #!/usr/bin/env node
 
+/*
+      File Name : index.ejs
+      Student's Name : Yerim Cho
+      Student ID : 301143325
+      Date : June 18th, 2021
+*/
+
 /**
  * Module dependencies.
  */

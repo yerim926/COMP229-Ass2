@@ -1,3 +1,8 @@
+// File Name : user.ts
+// Student's Name : Yerim Cho
+// Student ID : 301143325
+// Date : June 18th, 2021
+
 import mongoose, { PassportLocalSchema } from 'mongoose';
 const Schema = mongoose.Schema; // Schema alias
 import passportLocalMongoose from 'passport-local-mongoose';

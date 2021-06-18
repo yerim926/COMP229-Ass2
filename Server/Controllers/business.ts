@@ -1,3 +1,8 @@
+// File Name : business.ts
+// Student's Name : Yerim Cho
+// Student ID : 301143325
+// Date : June 18th, 2021
+
 import express, { Request, Response, NextFunction } from 'express';
 
 import Business from "../Models/business";
@@ -49,7 +54,7 @@ export function DisplayEditPage(req: Request, res: Response, next: NextFunction)
 }
 
 
-// Display (C)reate page
+// Display CREATE page
 export function DisplayAddPage(req: Request, res: Response, next: NextFunction): void
 {
     // show the edit view
@@ -58,7 +63,7 @@ export function DisplayAddPage(req: Request, res: Response, next: NextFunction):
 
 // Process Functions
 
-// Process (E)dit page
+// Process EDIT page
 export function ProcessEditPage(req: Request, res: Response, next: NextFunction): void
 {
     let id = req.params.id;
@@ -85,8 +90,7 @@ export function ProcessEditPage(req: Request, res: Response, next: NextFunction)
 }
 
 
-// Process (C)reate page
-// Process (C)reate page
+// Process CREATE page
 export function ProcessAddPage(req: Request, res: Response, next: NextFunction): void
 {
   // instantiate a new Business
@@ -109,7 +113,7 @@ export function ProcessAddPage(req: Request, res: Response, next: NextFunction):
   });
 }
 
-// Process (D)elete page
+// Process Delete page
 export function ProcessDeletePage(req: Request, res: Response, next: NextFunction): void
 {
     let id = req.params.id;
