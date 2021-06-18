@@ -6,6 +6,7 @@
     function confirmDelete()
     {
       // confirm deletion
+      // jquery
       $("a.delete").on("click", function(event){
         if(!confirm("Are you sure?"))
         {
