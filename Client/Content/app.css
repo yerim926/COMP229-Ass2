@@ -1,0 +1,141 @@
+/* your custom css goes here */
+
+/*
+    File Name : app.css
+    Student's Name : Yerim Cho
+    Student ID : 301143325
+    Date : June 4th, 2021
+
+*/
+
+
+/* Custom css goes here */
+
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+/*main contents*/
+#mainDiv {
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/*divide sections*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+.column {
+    float:left;
+    width:50%;
+    padding:10px;
+}
+
+/*home*/
+#paragraph1 {
+    font-size:large;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#mission {
+    font-family: 'Roboto Slab', serif;
+}
+
+#missionP{
+    font-size:large;
+}
+
+/*proects*/
+.projectRow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.projectRow{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 90%;
+  }
+
+#head{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*contact*/
+
+.contactMain{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.mb-3{
+    text-align: center;
+}
+.input-group-addon:first-child
+{
+    border-right: 0;
+}
+
+.input-group-addon
+{
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    border: 1px solid darkgrey;
+    border-radius: 4px; 
+}
+
+.input-group-addon .fa
+{
+    font-size: 18px;
+}
+
+.input-group .form-control
+{
+    position:relative;
+    z-index: 2;
+    float:left;
+    margin-bottom: 0;
+}
+
+.input-group .form-control:last-child
+{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+
+.login
+{
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: lightgrey;
+    border-radius: .3rem;
+}
+
+.login input
+{
+    background-color: white;
+    border-color: darkgrey;
+    border-radius: .4em;
+    width: 100%;
+}
+
+.edit-task
+{
+    position: relative;
+    top: -31px;
+    display: none;
+}
